@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fisher Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Title in bubble text -->
+  <div class="bubble-title">
+    Fisher Clicker
+  </div>
+
+  <!-- Top-right container for score and money -->
+  <div class="top-right">
+    <p>Score: <span id="score">0</span></p>
+    <p>Money: $<span id="money">0</span></p>
+  </div>
+
+  <div class="game-container">
+    <!-- Bass image -->
+    <img id="fish" src="cartoon-bass.png" />
+    <div class="upgrades">
+      <h2>Upgrades</h2>
+      <button id="auto-clicker-button" disabled>
+        <img src="mouse-icon.png" alt="Mouse Icon" class="upgrade-icon" />
+        Auto Clicker (Cost: $1,000)
+      </button>
+      <button id="helper-upgrade-button" disabled>
+        <img src="small-fish-icon.png" alt="Small Fish Icon" class="upgrade-icon" />
+        Helper Fish (Cost: $50,000)
+      </button>
+      <button id="shark-upgrade-button" disabled>
+        <img src="shark-icon.png" alt="Shark Icon" class="upgrade-icon" />
+        Shark Upgrade (Cost: $100,000,000)
+      </button>
+      <button id="double-money-button" disabled>
+        <img src="double-money-icon.png" alt="Double Money Icon" class="upgrade-icon" />
+        Double Money (Cost: $30)
+      </button>
+      <button id="triple-money-button" disabled>
+        <img src="triple-money-icon.png" alt="Triple Money Icon" class="upgrade-icon" />
+        Triple Money (Cost: $100)
+      </button>
+      <button id="fish-upgrade-button" disabled>
+        <img src="arrow-icon.png" alt="Arrow Icon" class="upgrade-icon" />
+        Fish Upgrade (Cost: $5,000)
+      </button>
+      <button id="rebirth-upgrade-button" disabled>
+        <img src="medal-icon.png" alt="Medal Icon" class="upgrade-icon" />
+        Rebirth (Cost: $5,000,000,000)
+      </button>
+    </div>
+  </div>
+
+  <!-- Bubbles container -->
+  <div id="bubbles-container"></div>
+
+  <!-- Medal container for rebirth -->
+  <div id="medal-container"></div>
+
+  <!-- Version and Credits -->
+  <div id="info-container">
+    <p id="version">Version 1</p>
+    <p id="credits">Developed by Jobysv25</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
